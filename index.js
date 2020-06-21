@@ -79,3 +79,15 @@ const alligator = ["thick scales", 80, "4 foot tail", "rounded snout"];
 
 alligator.includes("thick scales"); // returns true
 console.log(alligator.includes('thick scales'));
+
+// understanding accessors using the get lang()
+var person = {
+    firstName: "John",
+    lastName : "Doe",
+    language : "en",
+    get lang() {
+      return this.language;
+    }
+  };
+  console.log(person.language);
+  
